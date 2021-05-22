@@ -25,7 +25,7 @@ module.exports = {
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/orgs/raid-guild/',
           label: 'GitHub',
           position: 'right',
         },
@@ -47,16 +47,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Medium',
+              href: 'https://medium.com/raid-guild',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.com/invite/rGFpfQf',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/RaidGuild',
             },
           ],
         },
@@ -69,12 +69,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/orgs/raid-guild/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Raid Guild's Season 1. Built with Docusaurus.`,
     },
   },
   presets: [
