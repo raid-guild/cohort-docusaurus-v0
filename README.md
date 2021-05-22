@@ -4,6 +4,16 @@ We are building a season1 site using [Docusaurus](https://docusaurus.io/) + [IPF
 
 Have a look at [notes.md](notes.md) for more information.
 
+### Steps taken by Lars
+- Configuration of the footer
+- Configuartion of the copyright notice
+- Research about OrbitDB
+- Research about IPNS and CID
+- Started building neanderthals
+	- Docusaurus OrbitDB Integration
+	- https://www.npmjs.com/package/@crunchypie/neanderthals
+	- https://github.com/CrunchyPie/neanderthals
+
 ## Steps Taken by Travis
 
 ### Phase 1
