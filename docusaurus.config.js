@@ -75,6 +75,14 @@ module.exports = {
               to: "/blog",
             },
             {
+              label: "Projects",
+              to: "/projects",
+            },
+            {
+              label: "Apprenticeships",
+              to: "/apprenticeships",
+            },
+            {
               label: "GitHub",
               href: "https://github.com/orgs/raid-guild/",
             },
