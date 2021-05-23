@@ -1,115 +1,90 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "Season 1",
-  tagline: "Slaying Web3 Product Demons",
-  url: "https://bafybeieqwggeehqd6croo6mwafxc75zpeaq4h2vrzylkoitrtoqo6pyjai.ipfs.infura-ipfs.io/",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "Raid Guild", // Usually your GitHub org/user name.
-  projectName: "raid-guild-cohort-docusaurus-v0", // Usually your repo name.
-  plugins: ["@crunchypie/neanderthals"],
+  title: 'Season 1',
+  tagline: 'Slaying Web3 Product Demons',
+  url: 'https://bafybeieqwggeehqd6croo6mwafxc75zpeaq4h2vrzylkoitrtoqo6pyjai.ipfs.infura-ipfs.io/',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'Raid Guild', // Usually your GitHub org/user name.
+  projectName: 'raid-guild-cohort-docusaurus-v0', // Usually your repo name.
+  plugins: ['@crunchypie/neanderthals'],
   themeConfig: {
     neanderthals: {
-      "orbit-cid": "",
+      'orbit-cid': '',
     },
     navbar: {
-      title: "Season 1",
+      title: 'Season 1',
       logo: {
-        alt: "Crossed Swords",
-        src: "img/logo.svg",
+        alt: 'Crossed Swords',
+        src: 'img/logo.svg',
       },
       items: [
-        {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "Tutorial",
-        },
-        { to: "/blog", label: "Blog", position: "left" },
-        { to: "/projects", label: "Projects", position: "left" },
-        { to: "/apprenticeships", label: "Apprenticeships", position: "left" },
-
-        {
-          href: "https://github.com/orgs/raid-guild/",
-          label: "GitHub",
-          position: "right",
-        },
+        { to: '/apprentices', label: 'Apprentices', position: 'left' },
+        { to: '/projects', label: 'Projects', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'right' },
       ],
     },
     footer: {
-      style: "dark",
+      style: 'dark',
       links: [
         {
-          title: "Docs",
+          title: 'Community',
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: 'Medium',
+              href: 'https://medium.com/raid-guild',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.com/invite/rGFpfQf',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/RaidGuild',
             },
           ],
         },
         {
-          title: "Community",
+          title: 'More',
           items: [
             {
-              label: "Medium",
-              href: "https://medium.com/raid-guild",
+              label: 'Blog',
+              to: '/blog',
             },
             {
-              label: "Discord",
-              href: "https://discord.com/invite/rGFpfQf",
+              label: 'Docs',
+              to: '/docs/intro',
             },
             {
-              label: "Twitter",
-              href: "https://twitter.com/RaidGuild",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "Projects",
-              to: "/projects",
-            },
-            {
-              label: "Apprenticeships",
-              to: "/apprenticeships",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/orgs/raid-guild/",
+              label: 'GitHub',
+              href: 'https://github.com/orgs/raid-guild/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} <a href='https://raidguild.org/'>Raid Guild</a> Season 1. Built with <a href='https://docusaurus.io/'>Docusaurus</a>.`,
+      copyright: `${new Date().getFullYear()} <a href='https://raidguild.org/'>Raid Guild</a> Season 1. Built with <a href='https://docusaurus.io/'>Docusaurus</a>.`,
     },
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
