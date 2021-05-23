@@ -89,7 +89,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Raid Guild's Season 1. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href='https://raidguild.org/'>Raid Guild</a> Season 1. Built with <a href='https://docusaurus.io/'>Docusaurus</a>.`,
     },
   },
   presets: [
