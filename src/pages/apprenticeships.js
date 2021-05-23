@@ -1,10 +1,9 @@
 import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import HomepageFeatures from "../components/HomepageFeatures";
+import Header from "../components/Header";
 
 function ApprenticePageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -25,7 +24,7 @@ export default function ApprenticeshipPage() {
       title={`Raid Guild ${siteConfig.title} Apprenticeships`}
       description='Raid Guild apprenticeships in Season 1'
     >
-      <ApprenticePageHeader />
+      <Header title={siteConfig.title} tagline='Apprenticeships'></Header>
       <main>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vitae
         provident reiciendis expedita est suscipit illum culpa labore quae.
