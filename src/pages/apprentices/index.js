@@ -10,7 +10,7 @@ function Apprentices() {
     <Layout title='Apprentices'>
       <Header
         title='The Apprentices'
-        tagline='The brave and true apprentices of Season 1 who aspire to slay web3 demons.'
+        tagline='The brave and true apprentices of Season 1 who aspire to slay web3 product demons.'
       />
       <div
         style={{
