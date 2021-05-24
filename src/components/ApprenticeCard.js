@@ -4,6 +4,7 @@ import styles from "./ApprenticeCard.module.css";
 import { IconContext } from "react-icons";
 import { GiBirdTwitter, GiBroadsword } from "react-icons/gi";
 import Badge from "./Badge";
+import { CrossedAxes, CrossedSwords } from "./RaidIcons";
 
 const ApprenticeCard = ({
   name = "An Apprentice",
@@ -15,7 +16,7 @@ const ApprenticeCard = ({
   return (
     <div className={styles.apprenticeBox}>
       <h3 className={styles.apprenticeName}>{name}</h3>
-
+      <CrossedAxes color='var(--ifm-color-primary)' />
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ display: "flex", alignItems: "baseline" }}>
           {techRoles.length !== 0 ? "🧞" : ""}
