@@ -22,6 +22,20 @@
   --font-copy: "Mirza", serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-header);
+}
+
+p,
+span {
+  font-family: var(--font-copy);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
