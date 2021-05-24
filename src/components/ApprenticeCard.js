@@ -10,8 +10,11 @@ const ApprenticeCard = ({ name, site, twitter }) => {
       <h3 className={styles.apprenticeName}>Name</h3>
       <div style={{ display: "flex" }}>
         {techRoles
-          ? techRoles.map((role) => (
-              <span className={styles.apprenticeRole}>{role}, </span>
+          ? techRoles.map((role, index) => (
+              <span className={styles.apprenticeRole}>
+                {role}
+                {index !== techRoles.length - 1 ? "," : ""}
+              </span>
             ))
           : null}
       </div>
