@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "@docusaurus/Link";
+
 import clsx from "clsx";
 import styles from "./ApprenticeCard.module.css";
 import { IconContext } from "react-icons";
@@ -12,6 +14,7 @@ const ApprenticeCard = ({
   nonTechRoles,
   siteUrl,
   twitterHandle,
+  roleLink = false,
 }) => {
   return (
     <div className={styles.apprenticeBox}>
@@ -24,11 +27,12 @@ const ApprenticeCard = ({
             ? techRoles.map((role, index) => (
                 <>
                   {/* <Badge name={role} role='technical' /> */}
-
-                  <span className={styles.apprenticeRole}>
-                    {role}
-                    {index !== techRoles.length - 1 ? "," : ""}
-                  </span>
+                  <Link to={`/roles/${role.toLowerCase()}`}>
+                    <span className={styles.apprenticeRole}>
+                      {role}
+                      {index !== techRoles.length - 1 ? "," : ""}
+                    </span>
+                  </Link>
                 </>
               ))
             : null}
