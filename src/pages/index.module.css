@@ -36,24 +36,6 @@
   transition: all 0.15s linear;
 }
 
-.buttonRgCTA {
-  border: 2px solid #000;
-  color: #000;
-  background: var(--ifm-color-primary);
-  padding: 10px 15px;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 5px;
-  font-size: 1em;
-  transition: all 0.15s linear;
-}
-
-.buttonRgCTA:hover {
-  cursor: pointer;
-  background: var(--ifm-color-primary-lighter);
-  text-decoration: none;
-}
-
 .buttonRgPrimary:hover {
   cursor: pointer;
   background: var(--ifm-color-primary-lighter);
@@ -76,5 +58,23 @@
 .buttonRgSecondary:hover {
   cursor: pointer;
   border-color: var(--ifm-color-primary-lighter);
+  text-decoration: none;
+}
+
+.buttonRgCTA {
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  background: #000;
+  padding: 10px 15px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: all 0.15s linear;
+}
+
+.buttonRgCTA:hover {
+  cursor: pointer;
+  color: var(--ifm-color-primary-lighter);
   text-decoration: none;
 }
