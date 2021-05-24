@@ -1,0 +1,13 @@
+.apprenticeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+@media screen and (max-width: 966px) {
+  .apprenticeGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -2,21 +2,37 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./ApprenticeCard.module.css";
 
-const ApprenticeCard = ({ name, site, twitter }) => {
-  const techRoles = ["Warrior", "Paladin"];
-  const nonTechRoles = ["Scribe", "Healer"];
+const ApprenticeCard = ({
+  name = "An Apprentice",
+  techRoles = ["Apprenctice"],
+  nonTechRoles = ["Apprentice"],
+  site,
+  twitter,
+}) => {
   return (
     <div className={styles.apprenticeBox}>
-      <h3 className={styles.apprenticeName}>Name</h3>
-      <div style={{ display: "flex" }}>
-        {techRoles
-          ? techRoles.map((role, index) => (
-              <span className={styles.apprenticeRole}>
-                {role}
-                {index !== techRoles.length - 1 ? "," : ""}
-              </span>
-            ))
-          : null}
+      <h3 className={styles.apprenticeName}>{name}</h3>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex" }}>
+          {techRoles
+            ? techRoles.map((role, index) => (
+                <span className={styles.apprenticeRole}>
+                  {role}
+                  {index !== techRoles.length - 1 ? "," : ""}
+                </span>
+              ))
+            : null}
+        </div>
+        <div style={{ display: "flex" }}>
+          {nonTechRoles
+            ? nonTechRoles.map((role, index) => (
+                <span className={styles.apprenticeRole}>
+                  {role}
+                  {index !== nonTechRoles.length - 1 ? "," : ""}
+                </span>
+              ))
+            : null}
+        </div>
       </div>
     </div>
   );

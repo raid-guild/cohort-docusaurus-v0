@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import ApprenticeGrid from "../../components/ApprenticeGrid";
 
 function Projects() {
   return (

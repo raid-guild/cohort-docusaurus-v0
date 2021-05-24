@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import ApprenticeCard from "../../components/ApprenticeCard";
+import ApprenticeGrid from "../../components/ApprenticeGrid";
 
 function Apprentices() {
   return (
@@ -10,14 +10,13 @@ function Apprentices() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "50vh",
-          fontSize: "20px",
+          margin: "10vh auto",
         }}
       >
-        <p>
+        <ApprenticeGrid />
+        {/* <p>
           Edit <code>pages/apprentices/index.js</code> and save to reload.
-        </p>
-        <ApprenticeCard />
+        </p> */}
       </div>
     </Layout>
   );
