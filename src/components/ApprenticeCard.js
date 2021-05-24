@@ -4,7 +4,7 @@ import styles from "./ApprenticeCard.module.css";
 import { IconContext } from "react-icons";
 import { GiBirdTwitter, GiBroadsword } from "react-icons/gi";
 import Badge from "./Badge";
-import { CrossedAxes, CrossedSwords } from "./RaidIcons";
+import { CrossedAxes } from "./RaidIcons";
 
 const ApprenticeCard = ({
   name = "An Apprentice",

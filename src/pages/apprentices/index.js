@@ -2,8 +2,10 @@ import React from "react";
 import Layout from "@theme/Layout";
 import Header from "../../components/Header";
 import ApprenticeGrid from "../../components/ApprenticeGrid";
+import { apprenticeData } from "../../utils/apprentices";
 
 function Apprentices() {
+  console.log(apprenticeData);
   return (
     <Layout title='Apprentices'>
       <Header
@@ -18,7 +20,7 @@ function Apprentices() {
           margin: "10vh auto",
         }}
       >
-        <ApprenticeGrid />
+        <ApprenticeGrid apprenticeData={apprenticeData} />
         {/* <p>
           Edit <code>pages/apprentices/index.js</code> and save to reload.
         </p> */}
