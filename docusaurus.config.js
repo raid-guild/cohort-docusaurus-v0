@@ -12,7 +12,7 @@ module.exports = {
   plugins: ["@crunchypie/neanderthals"],
   themeConfig: {
     neanderthals: {
-      "orbit-cid": "",
+      "orbitAddress": "",
     },
     navbar: {
       title: "Season 1",
