@@ -13,3 +13,11 @@
 .apprenticeName {
   color: var(--ifm-color-primary);
 }
+
+.apprenticeRole {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
