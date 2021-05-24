@@ -17,7 +17,7 @@ const ApprenticeCard = ({
       <h3 className={styles.apprenticeName}>{name}</h3>
 
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <div style={{ display: "flex", alignItems: "baseline" }}>
           {techRoles.length !== 0 ? "🧞" : ""}
           {techRoles
             ? techRoles.map((role, index) => (
