@@ -16,6 +16,14 @@ function Projects() {
         <p>
           Edit <code>pages/projects/index.js</code> and save to reload.
         </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "colunn",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        ></div>
       </div>
     </Layout>
   );

@@ -9,17 +9,7 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "Raid Guild", // Usually your GitHub org/user name.
   projectName: "raid-guild-cohort-docusaurus-v0", // Usually your repo name.
-  plugins: [
-    "@crunchypie/neanderthals",
-    [
-      "@docusaurus/plugin-sitemap",
-      {
-        changefreq: "weekly",
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ],
-  ],
+  plugins: ["@crunchypie/neanderthals"],
   themeConfig: {
     neanderthals: {
       "orbit-cid": "",
