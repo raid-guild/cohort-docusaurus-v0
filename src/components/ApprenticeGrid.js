@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import clsx from "clsx";
 import styles from "./ApprenticeGrid.module.css";
 import ApprenticeCard from "./ApprenticeCard";
 
-const ApprenticeGrid = ({ data }) => {
+const ApprenticeGrid = () => {
+  const apprenticeData = [
+    {
+      name: "jonathan_p",
+      techRoles: ["Warrior", "Paladin"],
+      nonTechRoles: ["Scribe", "Healer"],
+    },
+    {
+      name: "earth2travis",
+      techRoles: [],
+      nonTechRoles: ["Cleric, Monk"],
+    },
+  ];
+
   return (
     <div className={styles.apprenticeGrid}>
-      <ApprenticeCard />
-      <ApprenticeCard />
-      <ApprenticeCard />
+      {apprenticeData &&
+        apprenticeData.map((apprentice) => (
+          <ApprenticeCard
+            name={apprentice.name}
+            techRoles={apprentice.techRoles}
+            nonTechRoles={apprentice.nonTechRoles}
+          />
+        ))}
     </div>
   );
 };
