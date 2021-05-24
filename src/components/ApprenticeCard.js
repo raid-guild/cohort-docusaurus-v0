@@ -27,12 +27,19 @@ const ApprenticeCard = ({
             ? techRoles.map((role, index) => (
                 <>
                   {/* <Badge name={role} role='technical' /> */}
-                  <Link to={`/roles/${role.toLowerCase()}`}>
+                  {roleLink === true ? (
+                    <Link to={`/roles/${role.toLowerCase()}`}>
+                      <span className={styles.apprenticeRole}>
+                        {role}
+                        {index !== techRoles.length - 1 ? "," : ""}
+                      </span>
+                    </Link>
+                  ) : (
                     <span className={styles.apprenticeRole}>
                       {role}
                       {index !== techRoles.length - 1 ? "," : ""}
                     </span>
-                  </Link>
+                  )}
                 </>
               ))
             : null}
