@@ -17,7 +17,7 @@
 .apprenticeRole {
   display: inline-block;
   white-space: nowrap;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-size: 1.25rem;

@@ -44,7 +44,14 @@ const ApprenticeCard = ({
               ))
             : null}
         </div>
-        <div style={{ display: "flex" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "flex-start",
+            alignItems: "baseline",
+          }}
+        >
           {nonTechRoles.length !== 0 ? "🧙🏼" : ""}
 
           {nonTechRoles
@@ -64,7 +71,8 @@ const ApprenticeCard = ({
         style={{
           display: "flex",
           flexDirection: "row",
-          marginTop: "1rem",
+          justifyContent: "flex-start",
+          alignItems: "baseline",
         }}
       >
         <IconContext.Provider
