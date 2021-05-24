@@ -14,11 +14,11 @@ export const apprenticeData = [
     twitterHandle: "earth2travis",
   },
   {
-    name: "earth2travis",
-    techRoles: [],
-    nonTechRoles: ["Cleric", "Monk"],
-    siteUrl: "https://github.com/earth2travis",
-    twitterHandle: "earth2travis",
+    name: "tenfinney",
+    techRoles: ["Archer", "Warrior", "Wizard"],
+    nonTechRoles: ["Rogue", "Monk"],
+    siteUrl: "https://github.com/tenfinney",
+    twitterHandle: "tenfinney",
   },
   {
     name: "earth2travis",
