@@ -3,6 +3,7 @@ import clsx from "clsx";
 import styles from "./ApprenticeCard.module.css";
 import { IconContext } from "react-icons";
 import { GiBirdTwitter, GiBroadsword } from "react-icons/gi";
+import Badge from "./Badge";
 
 const ApprenticeCard = ({
   name = "An Apprentice",
@@ -16,14 +17,18 @@ const ApprenticeCard = ({
       <h3 className={styles.apprenticeName}>{name}</h3>
 
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
           {techRoles.length !== 0 ? "🧞" : ""}
           {techRoles
             ? techRoles.map((role, index) => (
-                <span className={styles.apprenticeRole}>
-                  {role}
-                  {index !== techRoles.length - 1 ? "," : ""}
-                </span>
+                <>
+                  {/* <Badge name={role} role='technical' /> */}
+
+                  <span className={styles.apprenticeRole}>
+                    {role}
+                    {index !== techRoles.length - 1 ? "," : ""}
+                  </span>
+                </>
               ))
             : null}
         </div>
@@ -32,10 +37,13 @@ const ApprenticeCard = ({
 
           {nonTechRoles
             ? nonTechRoles.map((role, index) => (
-                <span className={styles.apprenticeRole}>
-                  {role}
-                  {index !== nonTechRoles.length - 1 ? "," : ""}
-                </span>
+                <>
+                  {/* <Badge name={role} role='nonTechnical' /> */}
+                  <span className={styles.apprenticeRole}>
+                    {role}
+                    {index !== nonTechRoles.length - 1 ? "," : ""}
+                  </span>
+                </>
               ))
             : null}
         </div>

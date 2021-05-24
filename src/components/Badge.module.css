@@ -1,0 +1,29 @@
+.techRoleBadge {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  background: rgb(233, 216, 253);
+  color: rgb(68, 51, 122);
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.nonTechRoleBadge {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.25rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  background: rgb(178, 245, 234);
+  color: rgb(35, 78, 82);
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
