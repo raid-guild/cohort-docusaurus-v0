@@ -7,7 +7,7 @@ const ApprenticeCard = ({
   techRoles,
   nonTechRoles,
   site,
-  twitter,
+  twitterHandle,
 }) => {
   return (
     <div className={styles.apprenticeBox}>
@@ -32,6 +32,9 @@ const ApprenticeCard = ({
                 </span>
               ))
             : null}
+          {twitterHandle ? (
+            <a href={`https://twitter.com/${twitterHandle}`}>Twitter</a>
+          ) : null}
         </div>
       </div>
     </div>

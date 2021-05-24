@@ -9,6 +9,7 @@ const ApprenticeGrid = () => {
       name: "jonathan_p",
       techRoles: ["Warrior", "Paladin"],
       nonTechRoles: ["Scribe", "Healer"],
+      twitterHandle: "jonathanprozzi",
     },
     {
       name: "earth2travis",
@@ -25,6 +26,7 @@ const ApprenticeGrid = () => {
             name={apprentice.name}
             techRoles={apprentice.techRoles}
             nonTechRoles={apprentice.nonTechRoles}
+            twitterHandle={apprentice.twitterHandle}
           />
         ))}
     </div>
