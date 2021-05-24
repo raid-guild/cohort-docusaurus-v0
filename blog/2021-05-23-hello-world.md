@@ -1,7 +1,7 @@
 ---
 slug: hello-world
 title: Hello World!
-author: Travis McCutcheon
+author: earth2travis
 author_title: Apprentice
 author_url: https://twitter.com/earth2travis
 author_image_url: https://pbs.twimg.com/profile_images/1363654871891644419/HoeZAXhP_400x400.jpg
