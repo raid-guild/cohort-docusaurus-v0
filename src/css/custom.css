@@ -6,6 +6,9 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mirza&family=Uncial+Antiqua&display=swap");
+
 :root {
   --ifm-color-primary: #ff3864;
   --ifm-color-primary-dark: #ff194c;
@@ -15,6 +18,8 @@
   --ifm-color-primary-lighter: #ff6788;
   --ifm-color-primary-lightest: #ff95ad;
   --ifm-code-font-size: 95%;
+  --font-header: "Uncial Antiqua", serif;
+  --font-copy: "Mirza", serif;
 }
 
 .docusaurus-highlight-code-line {
