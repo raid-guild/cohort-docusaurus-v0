@@ -5,7 +5,6 @@ import ApprenticeGrid from "../../components/ApprenticeGrid";
 import { apprenticeData } from "../../utils/apprentices";
 
 function Apprentices() {
-  console.log(apprenticeData);
   return (
     <Layout title='Apprentices'>
       <Header
