@@ -4,8 +4,8 @@ import styles from "./ApprenticeCard.module.css";
 
 const ApprenticeCard = ({
   name = "An Apprentice",
-  techRoles = ["Apprenctice"],
-  nonTechRoles = ["Apprentice"],
+  techRoles = ["Apprentice, Cohort"],
+  nonTechRoles = ["Apprentice, Cohort"],
   site,
   twitter,
 }) => {
