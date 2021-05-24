@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import ApprenticeCard from "../../components/ApprenticeCard";
 
 function Apprentices() {
   return (
@@ -16,6 +17,7 @@ function Apprentices() {
         <p>
           Edit <code>pages/apprentices/index.js</code> and save to reload.
         </p>
+        <ApprenticeCard />
       </div>
     </Layout>
   );

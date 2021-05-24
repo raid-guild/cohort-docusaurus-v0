@@ -1,0 +1,15 @@
+.apprenticeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.apprenticeName {
+  color: var(--ifm-color-primary);
+}
