@@ -21,24 +21,9 @@ export const apprenticeData = [
     twitterHandle: "tenfinney",
   },
   {
-    name: "earth2travis",
-    techRoles: [],
-    nonTechRoles: ["Cleric", "Monk"],
-    siteUrl: "https://github.com/earth2travis",
-    twitterHandle: "earth2travis",
-  },
-  {
-    name: "earth2travis",
-    techRoles: [],
-    nonTechRoles: ["Cleric", "Monk"],
-    siteUrl: "https://github.com/earth2travis",
-    twitterHandle: "earth2travis",
-  },
-  {
-    name: "earth2travis",
-    techRoles: [],
-    nonTechRoles: ["Cleric", "Monk"],
-    siteUrl: "https://github.com/earth2travis",
-    twitterHandle: "earth2travis",
+    name: "Lars",
+    techRoles: ["Paladin", "Necromancer"],
+    nonTechRoles: [],
+    siteUrl: "https://github.com/CrunchyPie",
   },
 ];
