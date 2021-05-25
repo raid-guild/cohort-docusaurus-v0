@@ -7,16 +7,22 @@ import Badge from "./Badge";
 import { ArmorHelmet } from "./RaidIcons";
 
 const ProjectCard = ({
-  name = "A Project",
-  description = "A quest to test our mettle as aspiring web3 product slayers.",
+  name,
+  description,
   teamRoles = [{ member: "Raider", mainProjectRole: "Apprentice" }],
 }) => {
   return (
     <div className={styles.projectBox}>
       <ArmorHelmet color='var(--ifm-color-primary)' />
 
-      <h3 className={styles.projectName}>{name}</h3>
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <h3 className={styles.projectName}>{name ? name : "A Raid"}</h3>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <div
           style={{
             display: "flex",
@@ -24,7 +30,11 @@ const ProjectCard = ({
             alignItems: "center",
           }}
         >
-          <p style={{ fontSize: "20px", margin: "0 0" }}>{description}</p>
+          <p style={{ fontSize: "20px", margin: "0 0" }}>
+            {description
+              ? description
+              : "A quest to test our mettle as web3 product slayers."}
+          </p>
 
           <img
             style={{
@@ -48,10 +58,17 @@ const ProjectCard = ({
             alignItems: "space-between",
           }}
         >
-          <>
+          <div>
             {teamRoles
               ? teamRoles.map((team, index) => (
-                  <div style={{ display: "flex", alignContent: "center" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignContent: "center",
+                      flexWrap: "wrap",
+                      wordWrap: "break-word",
+                    }}
+                  >
                     <span
                       className={styles.teamInline}
                       key={`${team.member}:${index}`}
@@ -69,7 +86,7 @@ const ProjectCard = ({
                   </div>
                 ))
               : null}
-          </>
+          </div>
         </div>
       </div>
     </div>

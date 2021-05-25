@@ -31,7 +31,7 @@ export const apprenticeData = [
 export const projectData = [
   {
     name: "Trial One",
-    description: "",
+    description: "The actual project description. Not the default prop value!",
     teamRoles: [
       {
         member: "Jonathan",

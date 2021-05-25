@@ -10,6 +10,7 @@ const ProjectGrid = ({ projectData }) => {
           <ProjectCard
             key={`${project.name}${index}`}
             name={project.name}
+            description={project.description}
             teamRoles={project.teamRoles}
           />
         ))}
