@@ -32,9 +32,37 @@ export const projectData = [
   {
     name: "Trial One",
     description: "",
+    teamRoles: [
+      {
+        member: "Jonathan",
+        mainProjectRole: "Warrior",
+      },
+      {
+        member: "Travis",
+        mainProjectRole: "Cleric",
+      },
+      {
+        member: "Lars",
+        mainProjectRole: "Necromancer",
+      },
+    ],
   },
   {
     name: "Trial Two",
     description: "",
+    teamRoles: [
+      {
+        member: "Tenfinney",
+        mainProjectRole: "Archer",
+      },
+      {
+        member: "Lars",
+        mainProjectRole: "Paladin",
+      },
+      {
+        member: "Travis",
+        mainProjectRole: "Cleric",
+      },
+    ],
   },
 ];

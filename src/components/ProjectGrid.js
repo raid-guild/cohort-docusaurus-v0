@@ -7,7 +7,11 @@ const ProjectGrid = ({ projectData }) => {
     <div className={styles.projectGrid}>
       {projectData &&
         projectData.map((project, index) => (
-          <ProjectCard key={`${project.name}${index}`} name={project.name} />
+          <ProjectCard
+            key={`${project.name}${index}`}
+            name={project.name}
+            teamRoles={project.teamRoles}
+          />
         ))}
     </div>
   );

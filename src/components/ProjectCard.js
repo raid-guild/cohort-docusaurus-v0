@@ -9,6 +9,7 @@ import { ArmorHelmet } from "./RaidIcons";
 const ProjectCard = ({
   name = "A Project",
   description = "A quest to test our mettle as aspiring web3 product slayers.",
+  teamRoles = [{ member: "Raider", mainProjectRole: "Apprentice" }],
 }) => {
   return (
     <div className={styles.projectBox}>
@@ -23,6 +24,8 @@ const ProjectCard = ({
             alignItems: "center",
           }}
         >
+          <p style={{ fontSize: "20px", margin: "0 0" }}>{description}</p>
+
           <img
             style={{
               objectFit: "contain",
@@ -35,20 +38,39 @@ const ProjectCard = ({
             }}
             src='https://raidguild.org/static/raid__fantasy--tee-technicolor-c6842ca3afdac3ffbde7b9a02bda0ceb.png'
           />
-
-          <p style={{ fontSize: "20px" }}>{description}</p>
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "flex-start",
-          alignItems: "baseline",
-        }}
-      >
-        <span className={styles.teamInline}>Apprentice</span>
-        <span className={styles.teamInline}>Role</span>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "space-between",
+          }}
+        >
+          <>
+            {teamRoles
+              ? teamRoles.map((team, index) => (
+                  <div style={{ display: "flex", alignContent: "center" }}>
+                    <span
+                      className={styles.teamInline}
+                      key={`${team.member}:${index}`}
+                    >
+                      An apprentice mercenary{" "}
+                      <span className={styles.teamHighlight}>
+                        {team.mainProjectRole}
+                      </span>{" "}
+                      who is known as {team.member}.
+                    </span>
+                    <span
+                      className={styles.teamInline}
+                      key={`${team.member}:${index}`}
+                    ></span>
+                  </div>
+                ))
+              : null}
+          </>
+        </div>
       </div>
     </div>
   );

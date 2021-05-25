@@ -17,6 +17,13 @@
   font-size: "20px";
 }
 
+.projectSeperator {
+  border-width: "0px 0px 0.125px";
+  border-color: var(--ifm-color-primary-lightest);
+  border-style: "solid";
+  width: "30%";
+}
+
 .teamInline {
   display: inline-block;
   white-space: nowrap;
@@ -24,4 +31,8 @@
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-size: 1.25rem;
+}
+
+.teamHighlight {
+  color: var(--ifm-color-primary);
 }
