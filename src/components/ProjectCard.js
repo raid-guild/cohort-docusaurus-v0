@@ -12,10 +12,30 @@ const ProjectCard = ({
 }) => {
   return (
     <div className={styles.projectBox}>
-      <h3 className={styles.projectName}>{name}</h3>
       <ArmorHelmet color='var(--ifm-color-primary)' />
+
+      <h3 className={styles.projectName}>{name}</h3>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex", alignItems: "baseline" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <img
+            style={{
+              objectFit: "contain",
+              overflow: "hidden",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "300px",
+              height: "300px",
+            }}
+            src='https://raidguild.org/static/raid__fantasy--tee-technicolor-c6842ca3afdac3ffbde7b9a02bda0ceb.png'
+          />
+
           <p style={{ fontSize: "20px" }}>{description}</p>
         </div>
       </div>
