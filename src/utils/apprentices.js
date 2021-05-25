@@ -21,6 +21,13 @@ export const apprenticeData = [
     twitterHandle: "tenfinney",
   },
   {
+    name: "DrHongo",
+    techRoles: ["Warrior", "Paladin"],
+    nonTechRoles: [],
+    siteUrl: "https://github.com/DrHongos",
+    twitterHandle: "Lucas19710505",
+  },
+  {
     name: "earth2travis",
     techRoles: [],
     nonTechRoles: ["Cleric", "Monk"],
