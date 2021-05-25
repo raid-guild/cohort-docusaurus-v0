@@ -12,3 +12,7 @@
 .projectName {
   color: var(--ifm-color-primary);
 }
+
+.projectDescription {
+  font-size: "20px";
+}

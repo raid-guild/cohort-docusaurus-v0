@@ -16,7 +16,7 @@ const ProjectCard = ({
       <ArmorHelmet color='var(--ifm-color-primary)' />
       <div style={{ display: "flex", flexDirection: "column" }}>
         <div style={{ display: "flex", alignItems: "baseline" }}>
-          <p>{description}</p>
+          <p style={{ fontSize: "20px" }}>{description}</p>
         </div>
       </div>
       <div

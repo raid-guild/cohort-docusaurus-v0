@@ -6,8 +6,8 @@ const ProjectGrid = ({ projectData }) => {
   return (
     <div className={styles.projectGrid}>
       {projectData &&
-        projectData.map((project, idx) => (
-          <ProjectCard key={`${project.name}${idx}`} name={project.name} />
+        projectData.map((project, index) => (
+          <ProjectCard key={`${project.name}${index}`} name={project.name} />
         ))}
     </div>
   );

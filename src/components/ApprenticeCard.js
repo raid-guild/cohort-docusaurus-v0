@@ -28,14 +28,20 @@ const ApprenticeCard = ({
                 <>
                   {/* <Badge name={role} role='technical' /> */}
                   {roleLink === true ? (
-                    <Link to={`/roles/${role.toLowerCase()}`}>
+                    <Link
+                      to={`/roles/${role.toLowerCase()}`}
+                      key={`${role}:{index}`}
+                    >
                       <span className={styles.apprenticeRole}>
                         {role}
                         {index !== techRoles.length - 1 ? "," : ""}
                       </span>
                     </Link>
                   ) : (
-                    <span className={styles.apprenticeRole}>
+                    <span
+                      className={styles.apprenticeRole}
+                      key={`${role}:{index}`}
+                    >
                       {role}
                       {index !== techRoles.length - 1 ? "," : ""}
                     </span>
@@ -56,13 +62,13 @@ const ApprenticeCard = ({
 
           {nonTechRoles
             ? nonTechRoles.map((role, index) => (
-                <>
-                  {/* <Badge name={role} role='nonTechnical' /> */}
-                  <span className={styles.apprenticeRole}>
-                    {role}
-                    {index !== nonTechRoles.length - 1 ? "," : ""}
-                  </span>
-                </>
+                <span
+                  className={styles.apprenticeRole}
+                  key={`${role}:${index}`}
+                >
+                  {role}
+                  {index !== nonTechRoles.length - 1 ? "," : ""}
+                </span>
               ))
             : null}
         </div>
