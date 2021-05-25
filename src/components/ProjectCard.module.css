@@ -1,0 +1,14 @@
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 15vw;
+}
+
+.projectName {
+  color: var(--ifm-color-primary);
+}

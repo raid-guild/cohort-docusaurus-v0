@@ -27,3 +27,14 @@ export const apprenticeData = [
     siteUrl: "https://github.com/CrunchyPie",
   },
 ];
+
+export const projectData = [
+  {
+    name: "Trial One",
+    description: "",
+  },
+  {
+    name: "Trial Two",
+    description: "",
+  },
+];
