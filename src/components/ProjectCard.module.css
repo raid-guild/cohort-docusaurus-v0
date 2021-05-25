@@ -26,11 +26,23 @@
 
 .teamInline {
   display: inline-block;
-
-  /* vertical-align: middle; */
+  vertical-align: middle;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-size: 1.25rem;
+}
+
+@media screen and (max-width: 966px) {
+  .teamInline {
+    line-height: 1.25rem;
+  }
+}
+
+.teamRoleBox {
+  display: "flex";
+  align-content: "center";
+  flex-wrap: "wrap";
+  word-wrap: "break-word";
 }
 
 .teamHighlight {

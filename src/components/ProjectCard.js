@@ -61,14 +61,7 @@ const ProjectCard = ({
           <div>
             {teamRoles
               ? teamRoles.map((team, index) => (
-                  <div
-                    style={{
-                      display: "flex",
-                      alignContent: "center",
-                      flexWrap: "wrap",
-                      wordWrap: "break-word",
-                    }}
-                  >
+                  <div className={styles.teamRoleBox}>
                     <span
                       className={styles.teamInline}
                       key={`${team.member}:${index}`}
