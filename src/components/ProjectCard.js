@@ -47,7 +47,8 @@ const ProjectCard = ({
           alignItems: "baseline",
         }}
       >
-        <p>Placeholder</p>
+        <span className={styles.teamInline}>Apprentice</span>
+        <span className={styles.teamInline}>Role</span>
       </div>
     </div>
   );
