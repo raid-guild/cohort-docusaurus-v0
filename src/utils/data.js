@@ -26,6 +26,14 @@ export const apprenticeData = [
     nonTechRoles: [],
     siteUrl: "https://github.com/CrunchyPie",
   },
+  {
+    name: "DrHongo",
+    techRoles: ["Warrior", "Paladin"],
+    nonTechRoles: [],
+    siteUrl: "https://github.com/DrHongos",
+    twitterHandle: "Lucas19710505",
+  },
+
 ];
 
 export const projectData = [

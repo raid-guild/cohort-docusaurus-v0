@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from "react";
 import Layout from "@theme/Layout";
 import Header from "../../components/Header";
 import ForceGraph3D from "3d-force-graph";
-import { apprenticeData } from "../../utils/apprentices";
+import { apprenticeData } from "../../utils/data";
 
 function Map() {
 
