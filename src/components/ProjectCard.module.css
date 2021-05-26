@@ -1,0 +1,50 @@
+.projectBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 15vw;
+}
+
+.projectName {
+  color: var(--ifm-color-primary);
+}
+
+.projectDescription {
+  font-size: "20px";
+}
+
+.projectSeperator {
+  border-width: "0px 0px 0.125px";
+  border-color: var(--ifm-color-primary-lightest);
+  border-style: "solid";
+  width: "30%";
+}
+
+.teamInline {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 966px) {
+  .teamInline {
+    line-height: 1.25rem;
+  }
+}
+
+.teamRoleBox {
+  display: "flex";
+  align-content: "center";
+  flex-wrap: "wrap";
+  word-wrap: "break-word";
+}
+
+.teamHighlight {
+  color: var(--ifm-color-primary);
+}

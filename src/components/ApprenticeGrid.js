@@ -7,8 +7,9 @@ const ApprenticeGrid = ({ apprenticeData }) => {
   return (
     <div className={styles.apprenticeGrid}>
       {apprenticeData &&
-        apprenticeData.map((apprentice) => (
+        apprenticeData.map((apprentice, idx) => (
           <ApprenticeCard
+            key={`${apprentice.name}${idx}`}
             name={apprentice.name}
             techRoles={apprentice.techRoles}
             nonTechRoles={apprentice.nonTechRoles}

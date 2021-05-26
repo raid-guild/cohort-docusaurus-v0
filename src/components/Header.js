@@ -4,7 +4,11 @@ import styles from "./Header.module.css";
 
 const Header = ({ title, tagline, children, primary = true }) => {
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header
+      className={
+        primary === true ? styles.heroBannerPrimary : styles.heroBannerSecondary
+      }
+    >
       <div className='container'>
         <h1 className='hero__title'>{title}</h1>
         <p className='hero__subtitle'>{tagline}</p>

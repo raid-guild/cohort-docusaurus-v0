@@ -1,30 +1,26 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import ApprenticeGrid from "../../components/ApprenticeGrid";
+import Header from "../../components/Header";
+import ProjectGrid from "../../components/ProjectGrid";
+import { projectData } from "../../utils/data";
 
 function Projects() {
   return (
     <Layout title='Projects'>
+      <Header
+        title='Projects'
+        tagline='Tails of our quests on our journey to be web3 product slayers.'
+        primary={false}
+      />
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "50vh",
-          fontSize: "20px",
+          margin: "10vh auto",
         }}
       >
-        <p>
-          Edit <code>pages/projects/index.js</code> and save to reload.
-        </p>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "colunn",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        ></div>
+        <ProjectGrid projectData={projectData} />
       </div>
     </Layout>
   );
