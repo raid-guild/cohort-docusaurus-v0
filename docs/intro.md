@@ -24,7 +24,7 @@ These are the components we currently offer.
 
 This is how you get started using our tool.
 
-## Improvements
+## Enhancements
 
 This project was created in an on-boarding sprint. Our goal was to keep it simple, prove the concept then identify what is required to develop a template we can share with the world. Good ideas have been omitted to limit the scope. But we love the enthusiasm and hope to collect the enhancements for future prioritization. Please do not hesitate to share your thoughts on what we should consider.
 
