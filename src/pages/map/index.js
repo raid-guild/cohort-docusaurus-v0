@@ -2,16 +2,18 @@ import React, {useRef, useEffect} from "react";
 import Layout from "@theme/Layout";
 import Header from "../../components/Header";
 import ForceGraph3D from "3d-force-graph";
-import { apprenticeData } from "../../utils/data";
+import * as THREE from "three";
+
+import { apprenticeData, projectData } from "../../utils/data";
 
 function Map() {
 
-  const raidGuildRoot = {name:'Raid Guild', id:'raidGuild',group:'team'};
-  const basicRoles = [{name:'techRoles', group:'techRoles', id:'techRoles'},
-            { name:'nonTechRoles', group:'nonTechRoles', id:'nonTechRoles'}];
+  const raidGuildRoot = {name:'Raid Guild', id:'raidGuild',group:'team', img:'raidguild.png'};
+  const basicRoles = [{name:'techRoles', group:'techRoles', id:'techRoles', img:'tech.png'},
+            { name:'nonTechRoles', group:'nonTechRoles', id:'nonTechRoles', img:'nonTech.png' }];
   const links = [
-    {target:raidGuildRoot,source:basicRoles[0],distance:50},
-    {target:raidGuildRoot,source:basicRoles[1],distance:50},
+    {target:raidGuildRoot,source:basicRoles[0],distance:100},
+    {target:raidGuildRoot,source:basicRoles[1],distance:100},
     ]
 
 
@@ -36,12 +38,12 @@ function Map() {
   async function getRoles(users){
     let techRolesArray = apprenticeData.map(x=>{return x.techRoles});
     const techRolesUnique = cleanArray(techRolesArray);
-    const techRolesNodes = techRolesUnique.map(x=> {return {name:x, id: x, group:'techRoles'}});
+    const techRolesNodes = techRolesUnique.map(x=> {return {name:x, id: x, group:'techRoles', img:x.concat('.png')}});
     let techRolesLinks = techRolesNodes.map(x=> {return {target:basicRoles[0], source:x}});
     let techRolesUserLinks = [];
     techRolesNodes.map(x=>{
       let results = users.filter(y=> y.techRoles.includes(x.name))
-      results.map(y=> techRolesUserLinks.push({target:x, source:y}))
+      results.map(y=> techRolesUserLinks.push({target:x, source:y, distance:50}))
       })
     const techRolesObjects={
       nodes:techRolesNodes,
@@ -49,12 +51,12 @@ function Map() {
     }
     let nonTechRolesArray = apprenticeData.map(x=>{return x.nonTechRoles});
     const nonTechRolesUnique = cleanArray(nonTechRolesArray);
-    const nonTechRolesNodes = nonTechRolesUnique.map(x=> {return {name:x, id: x, group:'nonTechRoles'}});
+    const nonTechRolesNodes = nonTechRolesUnique.map(x=> {return {name:x, id: x, group:'nonTechRoles', img:x.concat('.png')}});
     let nonTechRolesLinks = nonTechRolesNodes.map(x=> {return {target:basicRoles[1], source:x}});
     let nonTechRolesUserLinks = [];
     nonTechRolesNodes.map(x=>{
       let results = users.filter(y=> y.nonTechRoles.includes(x.name))
-      results.map(y=> nonTechRolesUserLinks.push({target:x, source:y}))
+      results.map(y=> nonTechRolesUserLinks.push({target:x, source:y, distance:50}))
       })
     const nonTechRolesObjects={
       nodes:nonTechRolesNodes,
@@ -96,9 +98,32 @@ function Map() {
     const graph = ForceGraph3D()
       (document.getElementById("3d-graph"))
       .nodeLabel('name')
-      .nodeAutoColorBy('group')
+      // .nodeAutoColorBy('group')
+      .nodeThreeObject((node) => {
+        let imageUrl;
+        if (node && node.img) {
+          imageUrl = require(`./images/${node.img}`);
+        } else {
+          imageUrl = require("./images/default.png");
+        }
+
+        const imgTexture = new THREE.TextureLoader().load(imageUrl.default);
+        const material = new THREE.SpriteMaterial({
+          map: imgTexture,
+          color: 0xffffff,
+        });
+        const sprite = new THREE.Sprite(material);
+        if (node.group === 0) {
+          sprite.scale.set(60, 60, 1);
+        } else {
+          sprite.scale.set(32, 32, 1);
+        }
+
+        return sprite;
+      })
       .graphData(gData2);
 
+    // graph.onBackgroundClick(graph.zoomToFit(100));
     return graph;
 
   }
@@ -110,6 +135,7 @@ function Map() {
         title='Raid Guild Map'
         tagline='Explore the guild connections, adventures, heroes and more!'
       />
+      <p> ToDo: add projects</p>
       <div
         style={{
           id:"3d-graph",
