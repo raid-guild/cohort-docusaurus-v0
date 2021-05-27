@@ -11,3 +11,7 @@ I got it like this and I got it like that.
 - React Icons
 
 What other packages did we add?
+
+## Adding Custom Fonts
+
+## Content Components
