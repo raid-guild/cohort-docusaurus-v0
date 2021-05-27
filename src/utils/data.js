@@ -26,6 +26,13 @@ export const apprenticeData = [
     nonTechRoles: [],
     siteUrl: "https://github.com/CrunchyPie",
   },
+  {
+    name: "ladylaurengrace",
+    techRoles: ["Archer", "Ranger"],
+    nonTechRoles: ["Tavern Keeper", "Healer", "Scribe"],
+    siteUrl: "https://github.com/lgracedesign",
+    twitterHandle: "ladylaurengrace",
+  },
 ];
 
 export const projectData = [
