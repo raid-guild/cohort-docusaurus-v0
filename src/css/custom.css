@@ -31,6 +31,10 @@ h6 {
   font-family: var(--font-header);
 }
 
+.footer__title {
+  font-family: var(--font-header);
+}
+
 p,
 span,
 a {
