@@ -21,18 +21,23 @@ therefore we can use ipfs-deploy to:
 
 ### Exact steps to take
 Install IPFS-Deploy globally:
-```
-npm install -g ipfs-deploy
+```bash
+$ npm install -g ipfs-deploy
 ```
 or
-```
-yarn global add ipfs-deploy
+```bash
+$ yarn global add ipfs-deploy
 ```
 you can also not install it:
-```
-npx ipfs-deploy 
+```bash
+$ npx ipfs-deploy 
 ```
 
 Using services using the -p name flag
 Configure env vars according to https://github.com/ipfs-shipyard/ipfs-deploy#supported-pinning-services
 
+```bash
+$ ipfs-deploy build/
+```
+
+aaand it should be up, domain hosting and linking will be in a different doc
