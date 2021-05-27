@@ -23,7 +23,6 @@ module.exports = {
       items: [
         { to: "/apprentices", label: "Apprentices", position: "left" },
         { to: "/projects", label: "Projects", position: "left" },
-        { to: "/map", label: "Map", position: "left" },
         { to: "/blog", label: "Blog", position: "right" },
       ],
     },
