@@ -78,11 +78,22 @@ function Map() {
     return userNodes;
   }
 
+  function focusNode(graph, node) {
+    // console.log('flying into ',node.id)
+    const distance = 50;
+    const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
+    graph.cameraPosition(
+      { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio }, // new position
+      node, // lookAt ({ x, y, z })
+      1000 // ms transition duration
+    );
+  }
+
+
 
   async function createMap(){
     //Adding roles into nodes
     const userNodes = await getUsersNodes();
-    console.log(userNodes)
     const [rolesNodes, rolesLinks] = await joinRolesNodes(userNodes);
     const gDataNodes = gData.nodes.concat(rolesNodes)
     const gDataLinks = gData.links.concat(rolesLinks)
@@ -102,7 +113,12 @@ function Map() {
       .nodeThreeObject((node) => {
         let imageUrl;
         if (node && node.img) {
-          imageUrl = require(`./images/${node.img}`);
+          try{
+            imageUrl = require(`./images/${node.img}`);
+          }
+          catch{
+            imageUrl = require("./images/fix_this.png");
+          }
         } else {
           imageUrl = require("./images/default.png");
         }
@@ -121,11 +137,24 @@ function Map() {
 
         return sprite;
       })
+      .onNodeClick((node, event) => {
+        focusNode(graph, node);
+      })
       .graphData(gData2);
 
-    // graph.onBackgroundClick(graph.zoomToFit(100));
+      graph.onBackgroundClick(zoomOut);
     return graph;
 
+    function zoomOut() {
+      graph.zoomToFit(100);
+    }
+
+  //   function updateHighlight() {
+  // // trigger update of highlighted objects in scene
+  //     graph
+  //       .linkWidth(graph.linkWidth())
+  //
+  //   }
   }
 
 

@@ -5,9 +5,14 @@
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  justify-content: flex-start;
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+.calloutQuote {
+  color: var(--ifm-color-primary-light);
 }

@@ -33,7 +33,13 @@ export const apprenticeData = [
     siteUrl: "https://github.com/DrHongos",
     twitterHandle: "Lucas19710505",
   },
-
+  {
+    name: "ladylaurengrace",
+    techRoles: ["Archer", "Ranger"],
+    nonTechRoles: ["Tavern Keeper", "Healer", "Scribe"],
+    siteUrl: "https://github.com/lgracedesign",
+    twitterHandle: "ladylaurengrace",
+  },
 ];
 
 export const projectData = [
