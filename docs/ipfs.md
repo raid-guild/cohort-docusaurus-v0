@@ -33,6 +33,6 @@ you can also not install it:
 npx ipfs-deploy 
 ```
 
-Using services using the -p <name> flag
+Using services using the -p name flag
 Configure env vars according to https://github.com/ipfs-shipyard/ipfs-deploy#supported-pinning-services
-^
+
