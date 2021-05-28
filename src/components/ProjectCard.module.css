@@ -13,8 +13,8 @@
   color: var(--ifm-color-primary);
 }
 
-.projectDescription {
-  font-size: "20px";
+.projectCopy {
+  font-size: 1.25rem;
 }
 
 .projectSeperator {
@@ -27,13 +27,17 @@
 .teamInline {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 0.25rem;
+  /* padding-left: 0.25rem; */
   padding-right: 0.25rem;
   font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 @media screen and (max-width: 966px) {
   .teamInline {
+    line-height: 1.25rem;
+  }
+  .projectCopy {
     line-height: 1.25rem;
   }
 }
@@ -45,6 +49,6 @@
   word-wrap: "break-word";
 }
 
-.teamHighlight {
+.projectHighlight {
   color: var(--ifm-color-primary);
 }

@@ -10,6 +10,7 @@ const ProjectCard = ({
   name,
   description,
   teamRoles = [{ member: "Raider", mainProjectRole: "Apprentice" }],
+  sponsor = "A mysterious patron ",
 }) => {
   return (
     <div className={styles.projectBox}>
@@ -30,12 +31,12 @@ const ProjectCard = ({
             alignItems: "center",
           }}
         >
-          <p style={{ fontSize: "20px", margin: "0 0" }}>
+          <p className={styles.projectCopy}>
             {description
               ? description
               : "A quest to test our mettle as web3 product slayers."}
           </p>
-
+          <span className={styles.projectHighlight}>{teamRoles.member}</span>
           <img
             style={{
               objectFit: "contain",
@@ -67,10 +68,14 @@ const ProjectCard = ({
                       key={`${team.member}:${index}`}
                     >
                       An apprentice mercenary{" "}
-                      <span className={styles.teamHighlight}>
+                      <span className={styles.projectHighlight}>
                         {team.mainProjectRole}
                       </span>{" "}
-                      who is known as {team.member}.
+                      who is known as{" "}
+                      <span className={styles.projectHighlight}>
+                        {team.member}
+                      </span>
+                      {"."}
                     </span>
                     <span
                       className={styles.teamInline}
@@ -79,6 +84,11 @@ const ProjectCard = ({
                   </div>
                 ))
               : null}
+            <span className={styles.teamInline}>
+              The trial known as {name ? name : null} has been sponsored by{" "}
+              <span className={styles.projectHighlight}> {sponsor} </span> of
+              the Raid Guild.
+            </span>
           </div>
         </div>
       </div>

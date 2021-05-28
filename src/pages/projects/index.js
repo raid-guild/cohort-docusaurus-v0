@@ -20,7 +20,7 @@ function Projects() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          margin: "10vh auto",
+          margin: "10vh 5vw",
         }}
       >
         <ProjectGrid projectData={projectData} />
