@@ -23,7 +23,7 @@ function Projects() {
           margin: "10vh 5vw",
         }}
       >
-        <ProjectGrid projectData={projectData} />
+        <ProjectGrid projectData={projectData} sorted />
       </div>
     </Layout>
   );
