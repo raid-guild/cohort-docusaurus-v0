@@ -10,6 +10,7 @@ const ProjectCard = ({
   name,
   description,
   teamRoles = [{ member: "Raider", mainProjectRole: "Apprentice" }],
+  sponsor = "A mysterious patron ",
 }) => {
   return (
     <div className={styles.projectBox}>
@@ -67,10 +68,14 @@ const ProjectCard = ({
                       key={`${team.member}:${index}`}
                     >
                       An apprentice mercenary{" "}
-                      <span className={styles.teamHighlight}>
+                      <span className={styles.projectHighlight}>
                         {team.mainProjectRole}
                       </span>{" "}
-                      who is known as {team.member}.
+                      who is known as{" "}
+                      <span className={styles.projectHighlight}>
+                        {team.member}
+                      </span>
+                      {"."}
                     </span>
                     <span
                       className={styles.teamInline}

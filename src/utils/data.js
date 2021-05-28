@@ -92,39 +92,15 @@ export const apprenticeData = [
 
 export const projectData = [
   {
-    name: "Trial One",
-    description: "The actual project description. Not the default prop value!",
+    name: "Smart Invoice UX Audit",
+    description:
+      "Helping the Raid Guild's Smart Invoice team, as well as current and future Smart Invoice users, by doing a UX audit and report.",
     teamRoles: [
       {
-        member: "Jonathan",
-        mainProjectRole: "Warrior",
-      },
-      {
-        member: "Travis",
-        mainProjectRole: "Cleric",
-      },
-      {
-        member: "Lars",
-        mainProjectRole: "Necromancer",
+        member: "arentweall",
+        mainProjectRole: "Monk",
       },
     ],
-  },
-  {
-    name: "Trial Two",
-    description: "",
-    teamRoles: [
-      {
-        member: "Tenfinney",
-        mainProjectRole: "Archer",
-      },
-      {
-        member: "Lars",
-        mainProjectRole: "Paladin",
-      },
-      {
-        member: "Travis",
-        mainProjectRole: "Cleric",
-      },
-    ],
+    sponsor: "Jaqi",
   },
 ];
