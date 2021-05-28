@@ -31,12 +31,12 @@ const ProjectCard = ({
             alignItems: "center",
           }}
         >
-          <p style={{ fontSize: "20px", margin: "0 0" }}>
+          <p className={styles.projectCopy}>
             {description
               ? description
               : "A quest to test our mettle as web3 product slayers."}
           </p>
-
+          <span className={styles.projectHighlight}>{teamRoles.member}</span>
           <img
             style={{
               objectFit: "contain",
@@ -84,6 +84,11 @@ const ProjectCard = ({
                   </div>
                 ))
               : null}
+            <span className={styles.teamInline}>
+              The trial known as {name ? name : null} has been sponsored by{" "}
+              <span className={styles.projectHighlight}> {sponsor} </span> of
+              the Raid Guild.
+            </span>
           </div>
         </div>
       </div>

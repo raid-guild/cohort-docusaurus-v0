@@ -12,6 +12,7 @@ const ProjectGrid = ({ projectData }) => {
             name={project.name}
             description={project.description}
             teamRoles={project.teamRoles}
+            sponsor={project.sponsor}
           />
         ))}
     </div>
