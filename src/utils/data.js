@@ -103,4 +103,16 @@ export const projectData = [
     ],
     sponsor: "Jaqi",
   },
+  {
+    name: "Web3 Resources",
+    description:
+      "A list of learning resources for people new to web3 that will go up on the Raid Guild handbook.",
+    teamRoles: [
+      {
+        member: "mkdir",
+        mainProjectRole: null,
+      },
+    ],
+    sponsor: "Jaqi",
+  },
 ];
