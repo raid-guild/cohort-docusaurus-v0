@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: "Season 1",
+  title: "Raid Guild Season 1 Cohort",
   tagline: "Slaying Web3 Product Demons",
   url: "https://bafybeieqwggeehqd6croo6mwafxc75zpeaq4h2vrzylkoitrtoqo6pyjai.ipfs.infura-ipfs.io/",
   baseUrl: "/",
@@ -12,7 +12,7 @@ module.exports = {
   plugins: ["@crunchypie/neanderthals"],
   themeConfig: {
     neanderthals: {
-      "orbitAddress": "",
+      orbitAddress: "",
     },
     navbar: {
       title: "Season 1",

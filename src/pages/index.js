@@ -6,14 +6,12 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import Header from "../components/Header";
 import HomepageFeatures from "../components/HomepageFeatures";
+import PageSeo from "../components/PageSeo";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description='Description will go into a meta tag in <head />'
-    >
+    <Layout description='The Raid Guild Season 1 Cohort site -- aspiring web3 product demon slayers.'>
       <Header title={siteConfig.title} tagline={siteConfig.tagline}>
         <div className={styles.buttons}>
           <Link

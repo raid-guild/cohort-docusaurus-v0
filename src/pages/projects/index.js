@@ -6,7 +6,10 @@ import { projectData } from "../../utils/data";
 
 function Projects() {
   return (
-    <Layout title='Projects'>
+    <Layout
+      title='Projects'
+      description='Tails of our quests on our journey to be web3 product slayer.'
+    >
       <Header
         title='Projects'
         tagline='Tails of our quests on our journey to be web3 product slayers.'

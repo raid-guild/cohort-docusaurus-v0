@@ -6,13 +6,9 @@ const PageSeo = ({ title, description }) => {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Head>
-      <meta
-        property='og:description'
-        content={description ? description : siteConfig.description}
-      />
-      <meta charSet='utf-8' />
-      <title>{title ? title : siteConfig.title}</title>
-      <link rel='canonical' href='http://mysite.com/example' />
+      <title>{siteConfig.title}</title>
+      <meta name='og:description' content={siteConfig.description} />
+      <meta name='description' content='TESTING THIS OUT' />
     </Head>
   );
 };

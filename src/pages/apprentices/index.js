@@ -6,7 +6,10 @@ import { apprenticeData } from "../../utils/data";
 
 function Apprentices() {
   return (
-    <Layout title='Apprentices'>
+    <Layout
+      title='Apprentices'
+      description='The brave and true apprentices of Raid Guild Season 1 cohort.'
+    >
       <Header
         title='The Apprentices'
         tagline='The brave and true apprentices of Season 1 who aspire to slay web3 product demons.'
