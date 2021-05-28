@@ -5,13 +5,12 @@ import ApprenticeCard from "./ApprenticeCard";
 
 const ApprenticeGrid = ({ apprenticeData, sorted }) => {
   const sortedData =
-    sorted === "alphabetical"
+    sorted === true
       ? apprenticeData.sort((apprenticeOne, apprenticeTwo) =>
           apprenticeOne.name > apprenticeTwo.name ? 1 : -1
         )
       : apprenticeData;
 
-  console.log("sorted", sortedData);
   return (
     <div className={styles.apprenticeGrid}>
       {apprenticeData &&
