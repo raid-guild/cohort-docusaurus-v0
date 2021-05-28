@@ -1,11 +1,13 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
+import { ArmorHelmet, Crown, Wand } from "./RaidIcons";
 
 const FeatureList = [
   {
     title: "Who We Are",
-    Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
+    // Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
+    icon: "ArmorHelmet",
     description: (
       <>
         <span className={styles.calloutQuote}>
@@ -20,7 +22,8 @@ const FeatureList = [
   },
   {
     title: "What We Bring",
-    Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    // Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    icon: "Crown",
     description: (
       <>
         <span className={styles.calloutQuote}>
@@ -35,7 +38,8 @@ const FeatureList = [
   },
   {
     title: "Our Story",
-    Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    // Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    icon: "Wand",
     description: (
       <>
         <span className={styles.calloutQuote}>"Stay awhile, and listen."</span>
@@ -46,11 +50,16 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ icon, title, description }) {
   return (
     <div className={clsx("col col--4")}>
       <div className='text--center'>
-        <Svg className={styles.featureSvg} alt={title} />
+        {/* <Svg className={styles.featureSvg} alt={title} /> */}
+        {icon === "ArmorHelmet" ? (
+          <ArmorHelmet color='var(--ifm-color-primary)' />
+        ) : null}
+        {icon === "Crown" ? <Crown color='var(--ifm-color-primary)' /> : null}
+        {icon === "Wand" ? <Wand color='var(--ifm-color-primary)' /> : null}
       </div>
       <div className='text--center padding-horiz--md'>
         <h3>{title}</h3>
