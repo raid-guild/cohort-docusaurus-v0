@@ -23,7 +23,7 @@ function Apprentices() {
           margin: "10vh auto",
         }}
       >
-        <ApprenticeGrid apprenticeData={apprenticeData} />
+        <ApprenticeGrid apprenticeData={apprenticeData} sorted='alphabetical' />
       </div>
     </Layout>
   );
