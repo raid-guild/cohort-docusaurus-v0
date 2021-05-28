@@ -62,7 +62,7 @@ function Feature({ icon, title, description }) {
         {icon === "Wand" ? <Wand color='var(--ifm-color-primary)' /> : null}
       </div>
       <div className='text--center padding-horiz--md'>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </div>

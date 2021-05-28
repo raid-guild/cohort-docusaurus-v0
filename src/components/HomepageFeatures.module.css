@@ -6,6 +6,8 @@
   padding: 2rem 0;
   width: 100%;
   justify-content: flex-start;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .featureSvg {
@@ -15,4 +17,8 @@
 
 .calloutQuote {
   color: var(--ifm-color-primary-light);
+}
+
+.featuresCopy {
+  font-size: 20px;
 }
