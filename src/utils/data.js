@@ -1,6 +1,7 @@
 export const apprenticeData = [
   {
     name: "jonathan_p",
+    primaryRole: ["Warrior"],
     techRoles: ["Warrior", "Paladin"],
     nonTechRoles: ["Scribe", "Healer"],
     siteUrl: "https://github.com/jonathanprozzi",
@@ -8,6 +9,7 @@ export const apprenticeData = [
   },
   {
     name: "earth2travis",
+    primaryRole: ["Monk"],
     techRoles: [],
     nonTechRoles: ["Cleric", "Monk"],
     siteUrl: "https://github.com/earth2travis",
@@ -32,6 +34,59 @@ export const apprenticeData = [
     nonTechRoles: ["Tavern Keeper", "Healer", "Scribe"],
     siteUrl: "https://github.com/lgracedesign",
     twitterHandle: "ladylaurengrace",
+  },
+  {
+    name: "Peter (dwarrowly)",
+    primaryRole: ["Scribe"],
+    techRoles: ["Archer"],
+    nonTechRoles: ["Scribe", "Cleric"],
+    twitterHandle: "satorianmusic",
+  },
+  {
+    name: "Matthew (sackofjoy)",
+    primaryRole: ["Archer"],
+    techRoles: ["Necromancer", "Paladin"],
+    nonTechRoles: ["Scribe", "Cleric"],
+    siteUrl: "https://github.com/mattcan",
+    twitterHandle: "mattcanhack",
+  },
+  {
+    name: "tenacious_bird_of_prey",
+    primaryRole: ["Wizard"],
+    techRoles: ["Warrior", "Wizard", "Paladin", "Archer"],
+    nonTechRoles: ["Scribe", "Monk"],
+    twitterHandle: "satorianmusic",
+    siteUrl: "https://linktr.ee/tenaciousbirdofprey",
+    twitterHandle: "PreyTenacious",
+  },
+  {
+    name: "Adrienne",
+    primaryRole: ["Ranger"],
+    techRoles: ["Archer", "Ranger"],
+    nonTechRoles: ["Scribe", "Monk"],
+    siteUrl: "https://adrienne.fyi/",
+  },
+  {
+    name: "bitbeckers",
+    primaryRole: [],
+    techRoles: ["Paladin", "Wizard", "Warrior"],
+    nonTechRoles: [],
+    siteUrl: "https://github.com/bitbeckers",
+    twitterHandle: "bitbeckers",
+  },
+  {
+    name: "itsmils",
+    primaryRole: [],
+    techRoles: ["Cleric", "Bard", "Healer"],
+    nonTechRoles: [],
+  },
+  {
+    name: "jkrantz.eth",
+    primaryRole: ["Monk"],
+    techRoles: ["Warrior"],
+    nonTechRoles: ["Monk"],
+    siteUrl: "https://github.com/ztnark",
+    twitterHandle: "jkrantz",
   },
 ];
 
