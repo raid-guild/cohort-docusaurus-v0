@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import clsx from "clsx";
+import React from "react";
 import styles from "./ApprenticeGrid.module.css";
 import ApprenticeCard from "./ApprenticeCard";
 

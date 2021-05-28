@@ -1,12 +1,19 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./ProjectGrid.module.css";
 import ProjectCard from "./ProjectCard";
 
-const ProjectGrid = ({ projectData }) => {
+const ProjectGrid = ({ projectData, sorted }) => {
+  const sortedData =
+    sorted === true
+      ? projectData.sort((projectOne, projectTwo) =>
+          projectOne.name > projectTwo.name ? 1 : -1
+        )
+      : projectData;
+
   return (
     <div className={styles.projectGrid}>
       {projectData &&
-        projectData.map((project, index) => (
+        sortedData.map((project, index) => (
           <ProjectCard
             key={`${project.name}${index}`}
             name={project.name}
