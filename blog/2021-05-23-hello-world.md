@@ -5,7 +5,7 @@ author: earth2travis
 author_title: Apprentice
 author_url: https://twitter.com/earth2travis
 author_image_url: https://pbs.twimg.com/profile_images/1363654871891644419/HoeZAXhP_400x400.jpg
-tags: [hello, Docusaurus, IPFS]
+tags: [Docusaurus, IPFS]
 ---
 
 Welcome to our project! You are here so we assume you are familiar with [Raid Guild](https://raidguild.org/) and Web3. Based on that assumption you are in the world of crypto and it has been a difficult week. We don't have the answers and these words won't change how you feel. What is important is for you to take inventory of those feelings. The losses we endure provide valuable lessons. Consider what you did wrong and how you might approach things differently next time.
