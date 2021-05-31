@@ -6,7 +6,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import Header from "../components/Header";
 import HomepageFeatures from "../components/HomepageFeatures";
-import PageSeo from "../components/PageSeo";
+
+import { ArmorHelmet, Crown, Wand } from "../components/RaidIcons";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();

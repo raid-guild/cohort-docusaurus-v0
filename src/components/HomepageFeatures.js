@@ -27,7 +27,7 @@ const FeatureList = [
     description: (
       <>
         <span className={styles.calloutQuote}>
-          "Our skill and knowledge is ready for trial."
+          "Our skill and knowledge is ready for testing."
         </span>
         <br />
         Armed with our unique experiences and perspectives, we are forming

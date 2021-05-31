@@ -54,6 +54,7 @@ p,
 span,
 a {
   font-family: var(--font-copy);
+  line-height: 1.5rem;
 }
 
 a {
