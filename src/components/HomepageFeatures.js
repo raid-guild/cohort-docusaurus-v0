@@ -27,7 +27,7 @@ const FeatureList = [
     description: (
       <>
         <span className={styles.calloutQuote}>
-          "Aspiring mercenaries slaying web3 product demons."
+          "Our skill and knowledge is ready for testing."
         </span>
         <br />
         Armed with our unique experiences and perspectives, we are forming
