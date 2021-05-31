@@ -4,14 +4,75 @@ sidebar_position: 4
 
 # Features
 
-I got it like this and I got it like that.
+As we were building the cohort site we built some additional features. The goal is to continue to build more additional components and features that amplify and enhance content creators using these site templates.
+
+We were aware of scope creep so we didn't add all of our ideas for the MVP, but we have additional features mainly focused on supporting content creation and helping more folks contribrute to the site documentation. These will be added in as we evaluate the usefulness in a template since we want to ensure that a template stays flexibile and relatively bare bones.
 
 ## Icons
 
-- React Icons
-
-What other packages did we add?
+We added the `react-icons` package.
 
 ## Adding Custom Fonts
 
 ## Content Components
+
+We added some components that allowed for flexibility and reusability. Eventually these components will be further extended, focusing on additional tools for content creators.
+
+### Header
+
+---
+
+We modified the initial `Header` component to allow for more resusability. We noticed that we kept including slight variations of the `Header` across pages. We changed the component to accept the following props: `title`, `tagline`, `children`, and `primary`. These props allowed us to use a modified version of this on the main page, as well as on the _Apprentices_ and _Projects_ pages.
+
+Here are the available props:
+
+- `title`: The _hero title_ for the page. This is an `<h1>` element.
+- `tagline`: The `hero subtitle` for the page. This is a `<p>` element (though should maybe be a `<span>`)
+- `children`: Wrap elements with the `<Header>`to have them rendered as children. See the example below.
+- `primary`: True or false. If true, this renders with the primary color background and black foreground. If false, the colors are inverted. This allows for a basic style variety.
+
+Here is an example of how to use this component without the `children` prop:
+
+```js
+import Header from "../../components/Header";
+
+<Header
+  title='The Apprentices'
+  tagline='The brave and true apprentices of Season 1 who aspire to slay web3 product demons.'
+  primary={false}
+/>;
+```
+
+Here is an example of how to use this component with the `children` prop:
+
+```js
+import Header from "../../components/Header";
+
+<Header title={siteConfig.title} tagline={siteConfig.tagline}>
+  <div className={styles.buttons}>
+    <Link
+      // className='button button--secondary button--lg'
+      className={clsx("button button--lg", styles.buttonRgCTA)}
+      to='/docs/intro'
+    >
+      Docusaurus Tutorial - 5min ⏱️
+    </Link>
+  </div>
+</Header>;
+```
+
+### Raid Icons
+
+We wanted to use the iconic art found on the [Raid Guild homepage](https://raidguild.org/). We created a reusable `<RaidIcons/>` component that wraps these SVGs and accepts a `color` prop for greater customization. This let us import and use these SVGs throughout the site without needing to paste in the same SVG code into each page.
+
+Here is an example of how to use this component:
+
+```js
+import { CrossedAxes } from "./RaidIcons";
+
+<CrossedAxes color='var(--ifm-color-primary)' />;
+```
+
+The component accepts the site theme variables set in the `custom.css` file used across the Docusaurus site.
+
+[To be continued!]
