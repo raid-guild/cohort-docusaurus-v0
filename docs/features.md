@@ -40,7 +40,7 @@ import Header from "../../components/Header";
   title='The Apprentices'
   tagline='The brave and true apprentices of Season 1 who aspire to slay web3 product demons.'
   primary={false}
-/>;
+/>
 ```
 
 Here is an example of how to use this component with the `children` prop:
@@ -58,7 +58,7 @@ import Header from "../../components/Header";
       Docusaurus Tutorial - 5min ⏱️
     </Link>
   </div>
-</Header>;
+</Header>
 ```
 
 ### Raid Icons
@@ -70,7 +70,7 @@ Here is an example of how to use this component:
 ```js
 import { CrossedAxes } from "./RaidIcons";
 
-<CrossedAxes color='var(--ifm-color-primary)' />;
+<CrossedAxes color='var(--ifm-color-primary)' />
 ```
 
 The component accepts the site theme variables set in the `custom.css` file used across the Docusaurus site.
