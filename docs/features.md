@@ -14,6 +14,30 @@ We added the `react-icons` package.
 
 ## Adding Custom Fonts
 
+We wanted to include the Raid Guild font stack that is used on the org site. The fonts used are *Uncial Antiqua* for headers and *Mirza* for copy. These are Google Fonts, so we were able to include with an import statement for each:
+
+- `@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");`
+- `@import url("https://fonts.googleapis.com/css2?family=Mirza&family=Uncial+Antiqua&display=swap");`
+
+We placed these imports in the `custom.css` file. Once these imports are included, they can be used in the `custom.css` file as CSS variables on the `:root` selector:
+
+```css
+:root {
+  --ifm-color-primary: #ff3864;
+  --ifm-color-primary-dark: #ff194c;
+  --ifm-color-primary-darker: #ff0940;
+  --ifm-color-primary-darkest: #da0030;
+  --ifm-color-primary-light: #ff577c;
+  --ifm-color-primary-lighter: #ff6788;
+  --ifm-color-primary-lightest: #ff95ad;
+  --ifm-code-font-size: 95%;
+  --font-header: "Uncial Antiqua", serif;
+  --font-copy: "Mirza", serif;
+}
+```
+
+The variables for `--font-header` and ``--font-copy` can now be used throughout the site. If the goal is for these fonts to be used throughout the site, consider adding them into the `custom.css` file for headings and copy.
+
 ## Content Components
 
 We added some components that allowed for flexibility and reusability. Eventually these components will be further extended, focusing on additional tools for content creators.
