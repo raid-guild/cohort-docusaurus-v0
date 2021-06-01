@@ -50,6 +50,10 @@ h6 {
   font-size: 16px;
 }
 
+span.token {
+  font-family: var(--ifm-font-family-monospace);
+}
+
 p,
 span,
 a {
