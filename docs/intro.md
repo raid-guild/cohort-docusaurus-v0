@@ -6,7 +6,7 @@ sidebar_position: 1
 
 We cannot emphasize the importance of documentation enough. The better we track and share our journeys and key learnings the easier it is to help others along their paths.
 
-This is where we record the information required for using our tools, the skills of our apprentices and ideas for improving our W3 Site Template project.
+This is where we record the information required for using our tools, the skills of our apprentices and ideas for improving our _Web3 Site Template_ project.
 
 ## Tools
 
@@ -14,11 +14,13 @@ These are the tools of our trade.
 
 ## Skills
 
-Navigating the Ethereum ecosystem requires an extensive toolbox of technology skills. tenfinney has been working hard to organize the capabilities of our cohort and resources for leveling up.
+Navigating the [Ethereum](https://ethereum.org/en/) ecosystem requires an extensive toolbox of technology skills. Season 1 apprentice **tenfinney** has been working hard to organize the capabilities of our cohort and resources for leveling up.
 
 ## Memes
 
-Raid Guild has an exceptional capacity to propagate culture. This is where we have recorded the work of some of our information transfer specialists.
+[Raid Guild](https://raidguild.org/) has an exceptional capacity to propagate culture. This is where we have recorded the work of some of our information transfer specialists.
+
+---
 
 ## Features
 
@@ -36,13 +38,13 @@ Wish list
 
 ## Docusaurus
 
-Docusaurus is an open source project for building websites. We are using this project as a core component of this templating system.
+[Docusaurus](https://docusaurus.io) is an open source project for building websites. We are using this project as a core component of this templating system.
 
 Believe it or not, but Docusaurus has dope [docs](https://docusaurus.io/docs/). It is well worth your time to explore the features they offer our project.
 
 ## IPFS
 
-IPFS is a peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open. It is a core component of the Distributed Web.
+[IPFS](https://ipfs.io/) is a peer-to-peer hypermedia protocol designed to make the web faster, safer, and more open. It is a core component of the Distributed Web.
 
 Learn how to build the future of the internet with IPFS [docs](https://docs.ipfs.io/).
 
