@@ -14,14 +14,16 @@ export default function Home() {
   return (
     <Layout description='The Raid Guild Season 1 Cohort site -- aspiring web3 product demon slayers.'>
       <Header title={siteConfig.title} tagline={siteConfig.tagline}>
-        <div className={styles.buttons}>
-          <Link
-            // className='button button--secondary button--lg'
-            className={clsx("button button--lg", styles.buttonRgCTA)}
-            to='/docs/intro'
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+        <div>
+          <p>
+            In the year of 2021 bulls are running. Post-pandemic fever is in the
+            air. And ether had just come off an ATH. A group of misfits from
+            around the globe converged on Discord. Assembled by our fearless
+            leaders taekikz and DamagedGoods to pledge Raid Guild. As
+            apprentices we came together to learn the ways of the DAO. Little
+            did we know the projects we hacked would provide foundation for the
+            future. This site documents our journey.
+          </p>
         </div>
       </Header>
       <main>
