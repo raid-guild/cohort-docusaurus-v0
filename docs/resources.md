@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 # Resources
@@ -13,10 +13,3 @@ sidebar_position: 9
 ## Workshops
 
 - [Lean UX: Iterative Product Development](https://drive.google.com/file/d/1tDS4tubgm6eTFA_fj1ABwvMVGFQAadx4/view?usp=sharing)
-
-## Tools
-
-- Discord
-- Notion
-- Airtable
-- Sheets
