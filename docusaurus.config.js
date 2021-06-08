@@ -25,31 +25,27 @@ module.exports = {
         { to: '/projects', label: 'Projects', position: 'left' },
         { to: '/memes', label: 'Memes', position: 'right' },
         { to: '/blog', label: 'Blog', position: 'right' },
+        { to: '/community', label: 'Community', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'Community',
+          title: 'Content',
           items: [
             {
-              label: 'Medium',
-              href: 'https://medium.com/raid-guild',
+              label: 'Apprentices',
+              to: '/apprentices',
             },
             {
-              label: 'Discord',
-              href: 'https://discord.com/invite/rGFpfQf',
+              label: 'Projects',
+              to: '/projects',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/RaidGuild',
+              label: 'Memes',
+              to: '/memes',
             },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
             {
               label: 'Blog',
               to: '/blog',
@@ -58,6 +54,23 @@ module.exports = {
               label: 'Docs',
               to: '/docs/intro',
             },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'DAO',
+              href: 'https://app.daohaus.club/dao/0x64/0x10e31c10fb4912bc408ce6c585074bd8693f2158',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/ent9Gxs2UB',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/i/lists/1395786573682257921',
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/orgs/raid-guild/',
@@ -65,7 +78,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `${new Date().getFullYear()} <a href='https://raidguild.org/'>Raid Guild</a> Season 1. Built with <a href='https://docusaurus.io/'>Docusaurus</a>.`,
+      copyright: `${new Date().getFullYear()} <a href='https://raidguild.org/'>Raid Guild</a> Season 1`,
     },
   },
   presets: [
