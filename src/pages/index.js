@@ -1,13 +1,13 @@
-import React from "react";
-import clsx from "clsx";
-import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./index.module.css";
-import Header from "../components/Header";
-import HomepageFeatures from "../components/HomepageFeatures";
+import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import styles from './index.module.css';
+import Header from '../components/Header';
+import HomepageFeatures from '../components/HomepageFeatures';
 
-import { ArmorHelmet, Crown, Wand } from "../components/RaidIcons";
+import { ArmorHelmet, Crown, Wand } from '../components/RaidIcons';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,7 +17,7 @@ export default function Home() {
         <div>
           <p>
             In the year of 2021 bulls are running. Post-pandemic fever is in the
-            air. And ether had just come off an ATH. A group of misfits from
+            air. And ether had just crashed off an ATH. A group of misfits from
             around the globe converged on Discord. Assembled by our fearless
             leaders taekikz and DamagedGoods to pledge Raid Guild. As
             apprentices we came together to learn the ways of the DAO. Little
