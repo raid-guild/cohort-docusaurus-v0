@@ -25,6 +25,7 @@ module.exports = {
         { to: '/projects', label: 'Projects', position: 'left' },
         { to: '/memes', label: 'Memes', position: 'right' },
         { to: '/blog', label: 'Blog', position: 'right' },
+        { to: '/community', label: 'Community', position: 'right' },
       ],
     },
     footer: {
