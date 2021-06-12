@@ -2,7 +2,7 @@
 module.exports = {
   title: "Raid Guild Season 1 Cohort",
   tagline: "Slaying Web3 Product Demons",
-  url: "",
+  url: "https://seasons.raidguild.org",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
