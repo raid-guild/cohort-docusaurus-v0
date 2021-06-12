@@ -2,8 +2,8 @@
 module.exports = {
   title: "Raid Guild Season 1 Cohort",
   tagline: "Slaying Web3 Product Demons",
-  url: "https://bafybeieqwggeehqd6croo6mwafxc75zpeaq4h2vrzylkoitrtoqo6pyjai.ipfs.infura-ipfs.io/",
-  baseUrl: "/ipfs/bafybeihqu6jsbosa47ip2vrlwxc7v4e3gokoynimmts53lvgxi2pmrgede/",
+  url: "",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
