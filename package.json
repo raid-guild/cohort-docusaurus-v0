@@ -1,6 +1,7 @@
 {
   "name": "raid-guild-docusaurus-v-0",
   "version": "0.0.0",
+  "homepage": "./",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
