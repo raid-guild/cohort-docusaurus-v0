@@ -2,8 +2,9 @@
 module.exports = {
   title: "Raid Guild Season 1 Cohort",
   tagline: "Slaying Web3 Product Demons",
-  url: "https://bafybeieqwggeehqd6croo6mwafxc75zpeaq4h2vrzylkoitrtoqo6pyjai.ipfs.infura-ipfs.io/",
-  baseUrl: "/",
+  // url: 'https://bafybeieqwggeehqd6croo6mwafxc75zpeaq4h2vrzylkoitrtoqo6pyjai.ipfs.infura-ipfs.io/',
+  url: "https://lucky-frost-0893.on.fleek.co/",
+  baseUrl: "/ipfs/QmbezGequPwcsWo8UL4wDF6a8hYwM1hmbzYv2mnKkEWaUp/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
